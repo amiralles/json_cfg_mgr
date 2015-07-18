@@ -1,4 +1,5 @@
 *.dll
+*.swp
 *.exe
 *bin*
 *obj*
