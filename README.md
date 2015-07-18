@@ -12,7 +12,7 @@ var conn = ConfigurationManager.ConnectionStrings["connSql"];
 //And properties on some connection string.
 var connStr  = ConfigurationManager.ConnectionStrings["connSql"].ConnectionString;
 var connProv = ConfigurationManager.ConnectionStrings["connSql"].ProviderName;
-
+```
 
 
 Probably you already notice, but the API of our brand new class is exactly the same as the System.Configuration.ConfigurationManager's one. This means that you only have to replace the using statement at the top of you .cs files to point to whatever namespace you use for this new ConfigurationManager class and you are all set. It wasn't that hard, right?
