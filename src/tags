@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AppSettings	ConfigurationManager.cs	/^        public static AppSettingsCollection AppSettings {$/;"	p	class:JsonConfigurationManager.ConfigurationManager
+AppSettings	EnvCfg.cs	/^        public Dictionary<string, string>    AppSettings { get; set; }$/;"	p	class:JsonConfigurationManager.EnvCfg
+AppSettingsCollection	AppSettingsCollection.cs	/^	    public AppSettingsCollection(Settings settings){$/;"	m	class:JsonConfigurationManager.AppSettingsCollection
+AppSettingsCollection	AppSettingsCollection.cs	/^	public class AppSettingsCollection {$/;"	c	namespace:JsonConfigurationManager
+Config	Config.cs	/^        public Config() {$/;"	m	class:JsonConfigurationManager.Config
+Config	Config.cs	/^    public class Config {$/;"	c	namespace:JsonConfigurationManager
+ConfigurationManager	ConfigurationManager.cs	/^    public class ConfigurationManager {$/;"	c	namespace:JsonConfigurationManager
+ConfigurationManagerTests	ConfigurationManagerTests.cs	/^    class ConfigurationManagerTests {$/;"	c	namespace:JsonConfigurationManager
+ConnectionString	DbSettings.cs	/^        public string ConnectionString { get; set; }$/;"	p	class:JsonConfigurationManager.DbSetting
+ConnectionStrings	ConfigurationManager.cs	/^        public static Dictionary<string, DbSetting> ConnectionStrings {$/;"	p	class:JsonConfigurationManager.ConfigurationManager
+ConnectionStrings	EnvCfg.cs	/^        public Dictionary<string, DbSetting> ConnectionStrings { get; set; }$/;"	p	class:JsonConfigurationManager.EnvCfg
+DbSetting	DbSettings.cs	/^    public class DbSetting {$/;"	c	namespace:JsonConfigurationManager
+EnvCfg	EnvCfg.cs	/^    public class EnvCfg {$/;"	c	namespace:JsonConfigurationManager
+Environments	Config.cs	/^        public Dictionary<string, EnvCfg> Environments { get; set; }$/;"	p	class:JsonConfigurationManager.Config
+Init	ConfigurationManager.cs	/^        public static void Init(string env = "DEV", string path = "config.json") {$/;"	m	class:JsonConfigurationManager.ConfigurationManager
+JsonConfigurationManager	AppSettingsCollection.cs	/^namespace JsonConfigurationManager {$/;"	n
+JsonConfigurationManager	Config.cs	/^namespace JsonConfigurationManager {$/;"	n
+JsonConfigurationManager	ConfigurationManager.cs	/^namespace JsonConfigurationManager {$/;"	n
+JsonConfigurationManager	ConfigurationManagerTests.cs	/^namespace JsonConfigurationManager {$/;"	n
+JsonConfigurationManager	DbSettings.cs	/^namespace JsonConfigurationManager {$/;"	n
+JsonConfigurationManager	EnvCfg.cs	/^namespace JsonConfigurationManager {$/;"	n
+ProviderName	DbSettings.cs	/^        public string ProviderName { get; set; }$/;"	p	class:JsonConfigurationManager.DbSetting
+SyncRoot	ConfigurationManager.cs	/^        static object SyncRoot = new object();$/;"	f	class:JsonConfigurationManager.ConfigurationManager	file:
+_appSettings	ConfigurationManager.cs	/^        static AppSettingsCollection _appSettings;$/;"	f	class:JsonConfigurationManager.ConfigurationManager	file:
+_connectionStrings	ConfigurationManager.cs	/^        static Dictionary<string, DbSetting> _connectionStrings;$/;"	f	class:JsonConfigurationManager.ConfigurationManager	file:
+_isConfigured	ConfigurationManager.cs	/^        static bool _isConfigured;$/;"	f	class:JsonConfigurationManager.ConfigurationManager	file:
+_settings	AppSettingsCollection.cs	/^        readonly Settings _settings = new Settings();$/;"	f	class:JsonConfigurationManager.AppSettingsCollection	file:
+it_should_read_existing_key	ConfigurationManagerTests.cs	/^        _ it_should_read_existing_key = assert =>$/;"	f	class:JsonConfigurationManager.ConfigurationManagerTests	file:
+it_should_return_connstr_for_existing_connections	ConfigurationManagerTests.cs	/^        _ it_should_return_connstr_for_existing_connections = assert =>$/;"	f	class:JsonConfigurationManager.ConfigurationManagerTests	file:
+it_should_return_existing_connections	ConfigurationManagerTests.cs	/^        _ it_should_return_existing_connections = assert =>$/;"	f	class:JsonConfigurationManager.ConfigurationManagerTests	file:
+it_should_return_null_for_non_existing_conn	ConfigurationManagerTests.cs	/^        _ it_should_return_null_for_non_existing_conn = assert =>$/;"	f	class:JsonConfigurationManager.ConfigurationManagerTests	file:
+it_should_return_null_for_non_existing_key	ConfigurationManagerTests.cs	/^        _ it_should_return_null_for_non_existing_key = assert =>$/;"	f	class:JsonConfigurationManager.ConfigurationManagerTests	file:
+it_should_return_provider_name_for_existing_connections	ConfigurationManagerTests.cs	/^        _ it_should_return_provider_name_for_existing_connections = assert =>$/;"	f	class:JsonConfigurationManager.ConfigurationManagerTests	file:

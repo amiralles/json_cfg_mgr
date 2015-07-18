@@ -1,0 +1,15 @@
+{
+    "Environments": {
+        "DEV": {
+            "AppSettings": {
+                "foo":"foo",
+            },
+            "ConnectionStrings":{
+                "connSql":{
+					"ProviderName":"System.Data.SqlClient",
+                    "ConnectionString":"server=FOO;Database=BAR;"
+                }
+            }
+        }
+    }
+}
