@@ -12,7 +12,6 @@ var conn = ConfigurationManager.ConnectionStrings["connSql"];
 //And properties on some connection string.
 var connStr  = ConfigurationManager.ConnectionStrings["connSql"].ConnectionString;
 var connProv = ConfigurationManager.ConnectionStrings["connSql"].ProviderName;
-```csharp
 
 
 
