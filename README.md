@@ -12,14 +12,36 @@ var conn = ConfigurationManager.ConnectionStrings["connSql"];
 //And properties on some connection string.
 var connStr  = ConfigurationManager.ConnectionStrings["connSql"].ConnectionString;
 var connProv = ConfigurationManager.ConnectionStrings["connSql"].ProviderName;
+
+//Wanna see more use cases? Take a look at ConfigurationManagerTests.cs.-
 ```
 
+Probably, you already notice that the API of our brand new class is exactly the same as the System.Configuration.ConfigurationManager's one. This means that you only have to replace the using statement at the top of you .cs files to point to whatever namespace you use for this new ConfigurationManager class and you are all set. It wasn't that hard, right?
 
-Probably you already notice, but the API of our brand new class is exactly the same as the System.Configuration.ConfigurationManager's one. This means that you only have to replace the using statement at the top of you .cs files to point to whatever namespace you use for this new ConfigurationManager class and you are all set. It wasn't that hard, right?
+Now lets take a look at the __actual configuration file__. (config.json).
+```javascript
+{
+    "Environments": {
+        "DEV": {
+            "AppSettings": {
+                "foo":"foo",
+            },
+            "ConnectionStrings":{
+                "connSql":{
+					"ProviderName":"System.Data.SqlClient",
+                    "ConnectionString":"server=FOO;Database=BAR;"
+                }
+            }
+        }
+    }
+}
+```
+Not sure about you, but to me this code looks cleaner than the cryptic xml settings you usually find stuffed into app.config files.
+And last but not least, by using this technique you can configure multliple environments into a single file. By default, it'll be using DEV environment, but you can add more _Environments_ and point ConfigurationManager to them. Once again, the way you use ConfigurationManager shouldn't chage.
 
-And last but not least, by using this technique you can configure multliple environments into a single file and even switch them at runtime.
+(\* And, with a bit of extra work, it could also be used to swap environments/configurations at runtime. Admittedly, this is a dangerous thing to do, but it's also applicable in particular cases).
 
-As far as I can tell there is only one caveat to this approach and assembly bindings redirects. If you can live without that, give it a try to json files. If you cannot and you know how to implement that feature without using an App.config file, let me know it the comments.
+As far as I can tell, there is only one caveat to this approach, and is assembly bindings redirects. If you can live without 'em, give it a try to json files. If you cannot and know how to implement that feature without using an App.config file, let me know it the comments. Or even better, send me a pull request!
 
 ###How to build
 
@@ -31,6 +53,4 @@ Go to the **~/tool** directory and run **bash test.sh Debug** or **test.bat Debu
 (\* if you build in *Release* mode replace *Debug* with *Release* when running the tests)
 
 If you wanna know a little more about the testing framework I'm using in this project, visit 
-[Contest Home Page](https://github.com/amiralles/contest)
-
-
+[Contest Home Page](https://github.com/amiralles/contest), and of course, let me know if you have any issue.
