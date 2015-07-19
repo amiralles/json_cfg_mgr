@@ -41,15 +41,15 @@ And last but not least, by using this technique you can configure multliple envi
 
 (\* And, with a bit of extra work, it could also be used to swap environments/configurations at runtime. Admittedly, this is a dangerous thing to do, but it's also applicable in particular cases).
 
-As far as I can tell, there is only one caveat to this approach, and is assembly bindings redirects. If you can live without 'em, give it a try to json files. If you cannot and know how to implement that feature without using an App.config file, let me know it the comments. Or even better, send me a pull request!
+As far as I can tell, there is only one caveat to this approach, and is assembly bindings redirects. If you can live without 'em, give json files a try. If you cannot and know how to implement that feature without using an App.config file, just let me know. Or even better, send me a pull request!
 
 ###How to build
 
-Just go to the **~/src** directory and run **msbuild** or **xbuild**.
+Just go to the **~/src** directory and run **xbuild** or **msbuild**.
 
 ###How to run the tests
 
-Go to the **~/tool** directory and run **bash test.sh Debug** or **test.bat Debug** if you are running on Windows.
+Go to the **~/tool** directory and run **bash test.sh Debug** or if you are running on Windows **test.bat Debug**.
 (\* if you build in *Release* mode replace *Debug* with *Release* when running the tests)
 
 If you wanna know a little more about the testing framework I'm using in this project, visit 
