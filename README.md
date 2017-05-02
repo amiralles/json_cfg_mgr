@@ -1,4 +1,4 @@
-##How about using json files instead of app.config
+## How about using json files instead of app.config
 
 I think we all agree that working with any kind of xml files is a bit of a pain in the ass. App.config is not an exception to that rule, so I'll show you a little trick that will help you to wipe out those nasty files replacing them for a more sane config file format with almost no changes to your code base. Thanks to Json.Net, is really easy to read/write C# objects to json files, so if you are starting a new project, use a plain old C# object to store your settings and you are done. But what happens if you wanna replace the way you work with settings in an existing code base? I guess you will try to do it in a way that doesn't requires a whole lotta changes. Well this is one!
 
@@ -43,11 +43,11 @@ And last but not least, by using this technique you can configure multliple envi
 
 As far as I can tell, there is only one caveat to this approach, and is assembly bindings redirects. If you can live without 'em, give json files a try. If you cannot and know how to implement that feature without using an App.config file, just let me know. Or even better, send me a pull request!
 
-###How to build
+### How to build
 
 Just go to the **~/src** directory and run **xbuild** or **msbuild**.
 
-###How to run the tests
+### How to run the tests
 
 Go to the **~/tool** directory and run **bash test.sh Debug** or if you are running on Windows **test.bat Debug**.
 (\* if you build in *Release* mode replace *Debug* with *Release* when running the tests)
